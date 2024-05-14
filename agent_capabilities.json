@@ -1,0 +1,18 @@
+{
+  "os": [
+    "Windows"
+  ],
+  "languages": [],
+  "features": {
+    "mythic": [
+      "wrapper"
+    ],
+    "custom": []
+  },
+  "payload_output": ["exe", "shellcode", "dll", "cpl"],
+  "architectures": [],
+  "c2": [],
+  "mythic_version": "3.2",
+  "agent_version": "",
+  "supported_wrappers": []
+}
