@@ -22,13 +22,11 @@ Firt step is to install the NimSyscallPacker wrapper in your Mythic instance.
 
 ```bash
 git clone https://github.com/som3canadian/Mythic_NimSyscallPacker_Wrapper.git nimsyscallpacker_wrapper
-cd ./Payload_Type/nimsyscallpacker_wrapper/agent_code
+cd nimsyscallpacker_wrapper/Payload_Type/nimsyscallpacker_wrapper/agent_code
 #
 # git clone NimSyscallPacker from S3cur3Th1sSh1t private repo
 # p.s: You just need to clone the repo in this folder. Docker will take care of the rest
 git clone git@github.com:S3cur3Th1sSh1t...
-
-
 #
 # go in the path where you can you run mythic-cli
 cd /path/to/mythic
