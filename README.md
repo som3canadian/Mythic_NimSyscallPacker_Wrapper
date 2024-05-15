@@ -35,6 +35,8 @@ cd /path/to/mythic
 
 Since this is not an official Mythic agent, you need to modify the agent config to support the new wrapper. You can do this by modifying the `builder.py` file in the agent's folder. For example, for the apollo agent, you can modify the `builder.py` file located in `<mythic installation folder>/InstalledServices/apollo/apollo/mythic/agent_functions/builder.py`. Restart after modification.
 
+note for merlin: `/path/to/Mythic/InstalledServices/merlin/container/payload/build/build.go`
+
 ![screenshot3](./assets/screenshot3.jpg)
 
 At this point you should be able to see the packer in the Mythic UI and create a payload using the new wrapper. You need to create a basic payload first (like apollo or any other agents that can be use with the wrapper).
