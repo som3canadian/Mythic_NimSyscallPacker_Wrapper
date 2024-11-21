@@ -11,6 +11,7 @@ ARG HTTPS_PROXY
 RUN apt update && apt install -y python3 python3-pip mingw-w64=8.0.0-1 xz-utils git osslsigncode tar zip openssl gcc make wget curl xml2 pkg-config automake build-essential perl libtool autotools-dev g++ ruby libssl-dev --no-install-recommends && rm -rf /var/lib/apt/lists/* && apt-get clean
 
 COPY [".docker/requirements.txt", "requirements.txt"]
+RUN pip3 install --upgrade pip
 RUN pip3 install -r requirements.txt
 
 # FROM python:3.11-slim-bullseye
