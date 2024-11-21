@@ -8,17 +8,20 @@ Mythic C2 wrapper for NimSyscallPacker. This is similar to the [scarescrow_wrapp
 
 ![Screenshot2](./assets/screenshot2.jpg)
 
+![Screenshot4](./assets/screenshot4.jpg)
+
 ## Requirements
 
 - Having Mythic installed and running
 - Having an agent installed and working (ex: apollo)
 - You are being able to generate a payload (ex: apollo csharp payload), run it on a target machine and receive a callback.
+- Being a [sponsor of S3cur3Th1sSh1t](https://github.com/sponsors/S3cur3Th1sSh1t)
 
 ## Usage
 
 ### Install and setup NimSyscallPacker wrapper
 
-Firt step is to install the NimSyscallPacker wrapper in your Mythic instance.
+First step is to install the NimSyscallPacker wrapper in your Mythic instance.
 
 ```bash
 git clone https://github.com/som3canadian/Mythic_NimSyscallPacker_Wrapper.git nimsyscallpacker_wrapper
