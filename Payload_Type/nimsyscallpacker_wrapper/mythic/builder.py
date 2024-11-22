@@ -16,7 +16,7 @@ class NimSyscallPackerWrapper(PayloadType):
     author = "som3canadian"
     supported_os = [SupportedOS.Windows]
     wrapper = True
-    wrapped_payloads = []
+    wrapped_payloads = ["apollo", "merlin"]
     note = "NimSyscallPacker wrapper"
     supports_dynamic_loading = False
     build_parameters = [
