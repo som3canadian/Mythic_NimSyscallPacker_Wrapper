@@ -23,10 +23,10 @@ COPY [".", "."]
 
 RUN wget https://nim-lang.org/choosenim/init.sh && CHOOSENIM_CHOOSE_VERSION=1.6.8 bash init.sh -y
 ENV PATH=/root/.nimble/bin:$PATH
-RUN nimble install -y nimcrypto docopt ptr_math strenc winim
+RUN nimble install -y nimcrypto docopt ptr_math winim https://github.com/S3cur3Th1sSh1t/nim-strenc/
 
 RUN cd /opt/ && git clone https://github.com/S4ntiagoP/donut --branch syscalls && cd donut && make && cd
-ENV PATH=/opt/donut/:$PATH
+ENV PATH=/opt/donut:$PATH
 
 # copy folder from mythic_base to this image
 WORKDIR /Mythic/agent_code/NimSyscallPacker

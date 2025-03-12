@@ -5,7 +5,6 @@ import asyncio
 import os
 import tempfile
 from distutils.dir_util import copy_tree
-import base64
 import shutil
 import pathlib
 import zipfile
@@ -16,7 +15,7 @@ class NimSyscallPackerWrapper(PayloadType):
     author = "som3canadian"
     supported_os = [SupportedOS.Windows]
     wrapper = True
-    wrapped_payloads = ["apollo", "merlin"]
+    wrapped_payloads = ["apollo", "merlin", "xenon"]
     note = "NimSyscallPacker wrapper"
     supports_dynamic_loading = False
     build_parameters = [
@@ -199,7 +198,7 @@ class NimSyscallPackerWrapper(PayloadType):
             # dummy input file (file produced by the agent)
             source_file = "{}/SomeFile.{}".format(agent_build_path, self.get_parameter("input-file-extension"))
             with open(str(source_file), "wb") as f:
-                f.write(base64.b64decode(self.wrapped_payload))
+                f.write(self.wrapped_payload)
             # if working_path is not null, then we have a file to work with
             if not os.path.exists(source_file):
                 resp.build_stderr = "Failed to find the payload to wrap!"
